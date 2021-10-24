@@ -1,8 +1,8 @@
 # Geometry Calculator Web
 
-The web version of the Geometry Calculator Tool used in SENG3120 & SENG3110
+This is starter code for the web version of the Geometry Calculator used in SENG3120 & SENG3110
 
-Use this as sample code for related activities.
+Use this as sample code for lab activities when requested.
 
 ---
 
