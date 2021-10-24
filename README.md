@@ -30,6 +30,7 @@ Use this as sample code for lab activities when requested.
     `python3 -m venv .`
 
     Windows:
+    
     `python -m venv .`
 
     On Unix system a new directory should be created named "bin."  On Windows it will be named "Scripts."   Use the "activate" script to activate the Python virtual environment.
