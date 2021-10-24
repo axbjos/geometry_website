@@ -12,7 +12,7 @@ Use this as sample code for lab activities when requested.
 
 1. **Pick a location on disk and clone this code into a local repository:**
 
-    > git clone https://github.com/axbjos/geometry_calculator_web.git
+    `git clone https://github.com/axbjos/geometry_calculator_web.git`
 
     (Alternatively the new GitHub CLI could also be used)
 
@@ -20,33 +20,39 @@ Use this as sample code for lab activities when requested.
 
 2. **Create a Python Virtual Environment**
 
-    This is a simple Flask-based Python Web App.  It is advisable to use a Python Virtual Environment to keep this app's dependencies separate from other Python dependencies on the target machine. To create a Virtual Environment do the following from within the geometry_calculator_web directory: 
+    This is a Flask-based Python Web App. It is necessary to use the pip installer to install several different packages as can be found in "requirements.txt"
+    
+    It is advisable to use a Python Virtual Environment to keep Calculator App's dependencies separate from other Python dependencies on the target machine. To learn more about why Python environments are often used and how visit: https://docs.python.org/3/tutorial/venv.html
+    
+    Again, make sure you are in the geometry_calculator_web direction created by the git clone.  Then do the following: 
 
     Unix OS's:   
-    > python3 -m venv venv
+    `python3 -m venv .`
 
     Windows:
-    > python -m venv venv
+    `python -m venv .`
 
-3. **Activate the Virtual Environment:**
+    On Unix system a new directory should be created named "bin."  On Windows it will be named "Scripts."   Use the "activate" script to activate the Python virtual environment.
+    
+3. **Activate the PythonVirtual Environment:**
 
-    Unix OS's:  
-    >source venv/bin/activate
+    Unix OS's (use the unix "source" command to run the script):  
+    `source bin/activate`
 
     Windows:
-    >venv\Scripts\activate.bat
+    `Scripts\activate.bat`
 
 4. **Install App Dependencies Using the Python Package Tool:**
 
-    Rather than using pip to install the required packages, such as Flask, etc., all dependencies are in the requirements.txt file.
+    Rather than using pip to install all the required dependencies manually one-by-one, all dependencies are listed in the requirements.txt file.  Have pip automatically install them.
 
-    > pip install -r requirements.txt
+    `pip install -r requirements.txt`
 
-    In a virtual environment that was create using Python 3, on Unix OS's there no need to use pip3.  You can, but pip also works in this instance.
+    In a virtual environment that was created using Python 3 on Unix OS's there no need to use the command pip3.  You can, but pip also works in this instance.
 
 5. Run the Application:
 
-    > python GeometryCalcWeb.py
+    `python GeometryCalcWeb.py`
 
     The App should now be running.  Access it via `localhost:5000`
 
