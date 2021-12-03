@@ -1,4 +1,5 @@
 /*Jenkinsfile for automatically building the Dockerized version of the app*/
+def app
 node {
 
     stage('Clone repository') {
