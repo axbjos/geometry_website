@@ -21,7 +21,7 @@ node {
         app.inside {
             sh 'echo "Running Tests"'
             sh 'cd /app'
-            sh 'python3 -m unittest GeometryTest.py'
+            sh 'python3 -m unittest GeometryCalcWebTest.py'
             sh 'python3 -m unittest cylinderTest.py'
         }
     }
